@@ -8,18 +8,22 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- <form class="calculator">
-      <div>
-        <input type="text" name="display">
-      </div>
-
-      <div class="row">
-        <input type="button" value="00" onclick="display.value += '00'">
-        <input type="button" value="0" onclick="display.value += '0'">
-        <input type="button" value="=" onclick="display.value = eval(display.value)" id="equal">
-      </div>
-
-    </form> -->
-  <!-- <script src="./script.js"></script> -->
+  <form class="tip-form">
+    <div>
+      <h3>Total Bill</h3>
+      <input type="text" name="display" id="total-bill">
+    </div>
+    <div>
+      <h3>TIP</h3>
+      <input type="text" value="%" id="tip-input">
+    </div>
+    <div>
+      <input type="button" value="RUN" id="equal">
+    </div>
+    <div class="tip-output"></div>
+  </form>
+  <script src="./script.js"></script>
 </body>
 </html>
+<!-- onclick="display.value += '0'" -->
+<!-- onclick="display.value = eval(display.value)" -->
