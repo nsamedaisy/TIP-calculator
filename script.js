@@ -1,9 +1,11 @@
-//an event attribute used to associate functionality with being executed whenever the change event occurs i.e it returns current value
-const bill = Number(document.querySelector('#total-bill').value);
-const tip = document.querySelector('#tip-input').value;
-const tipvalue = bill*(tip/100);
-const run = document.querySelector('#equal');
+const display = document.querySelector('#result');
+display.addEventListener('click', finalTip);
 
-document.querySelector('.tip-form').onchange = function() {
-  const output = document.querySelector('.tip-output').innerHTML = `${tip}%`;
+function tipCalculator() {
+	const bill = parseInt(document.querySelector('#amtinput').value);const tip = parseInt(document.querySelector('#tipinput').value);
+	return bill*(tip/100);
+}
+
+function finalTip() {
+	document.querySelector('#display-result').innerHTML = tipCalculator()
 }
