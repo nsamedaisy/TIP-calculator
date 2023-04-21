@@ -1,35 +1,25 @@
-// const display = document.querySelector('#total');
-// display.addEventListener('click', finalTip);
+window.onload = () => {
+		document.querySelector('#result').onclick = calculateTip;
+	}
 
-function tipCalculator() {
-  const bill = parseInt(document.querySelector('#amt-input').value);
-  const tip = parseInt(document.querySelector('#tip-input').value);
-  const people = parseInt(document.querySelector('#peopleamt').value);
+function calculateTip() {
+	let bill = document.querySelector('#amount').value;
+	let people = document.querySelector('#peopleamt').value;
+	let tip = document.querySelector('#tipinput').value;
+  
+	if (bill === '' && tip === 'Select') {
+		alert("Please enter valid values");
+		return;
+	}
 
-  if(people === "" || people <= 1){
-    people = 1;
-    document.getElementById("each").style.display = "none";
-  } 
-    else {
-      document.getElementById("each").style.display = "block";
-   }
+	if (people === '1')
+		document.querySelector('#each').style.display = 'none';
+	else
+		document.querySelector('#each').style.display = 'block';
 
-  const totalbill = (amt-input * tip-input)/people;
-  totalbill = Math.round(totalbill * 100)/100;
-  totalbill = totalbill.toFixed(2);
+	let total = (bill * tip) / people;
+	total = total.toFixed(2);
 
-  document.getElementById("total").style.display ="block";
-  document.getElementById("tip").innerHTML = totalbill;
-}
-
-  document.getElementById("total").style.display ="none";
-  document.getElementById("each").style.display ="none";
-
-  document.getElementById("result").onclick = functiom(); {
-    tipCalculator();
-  }
-
-function finalTip(e) {
-  e.preventDefault()
-  document.querySelector('#display-result').innerHTML = tipCalculator()
+	document.querySelector('#total').style.display = 'block';
+	document.querySelector('#tip').innerHTML = total;
 }

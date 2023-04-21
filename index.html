@@ -9,12 +9,12 @@
 </head>
 <body>
   
-  <form class="tip-form">
+  <div class="tipform">
       <h3>TIP Calculator</h3>
       <p>How much was your bill</p>
-        $<input type="text" placeholder="amount" id="amt-input">
+        $<input type="text" placeholder="amount" id="amount">
         <p>How was your service?</p>
-        <select id="tip-input">
+        <select id="tipinput">
           <option disabled selected value="0">-- Options --</option>
           <option value="0.3">30&#37; &#45; Outstanding</option>
           <option value="0.2">20&#37; &#45; Good</option>
@@ -28,7 +28,7 @@
 
     <div class="btn">
       <button type="button" id="result">Calculate!</button>
-      <button id="refresh">Refresh</button>
+      <button type="reset"  id="refresh">Refresh</button>
     </div>
 
       <div id="total">
@@ -37,7 +37,7 @@
         <small id="each">each</small>
       </div>
 
-  </form>
+  </div>
   <script src="./script.js"></script>
 </body>
 </html>

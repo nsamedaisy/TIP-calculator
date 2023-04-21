@@ -22,9 +22,9 @@ body {
   font-family: 700;
 }
 
-.tip-form {
-  width: 43vw;
-  height: 70vh;
+.tipform {
+  width: 50vw;
+  height: 80vh;
   background-color: #363a934d;
   box-shadow: 10px 10px 5px black;
   border-radius: 9px;
@@ -32,14 +32,14 @@ body {
   font-size: 22px;
 }
 
-.tip-form h3 {
+.tipform h3 {
   font-size: 30px;
   text-align: center;
   padding-top: 15px;
   color: wheat;
 }
 
-.tip-form input {
+.tipform input {
   width: 25vw;
   padding: 5px;
   margin-left: 1vw;
@@ -52,7 +52,7 @@ option {
   color: #030427dd;
 }
 
-#tip-input {
+#tipinput {
   width: 25vw;
   padding: 5px;
   margin-left: 1vw;
@@ -73,12 +73,17 @@ option {
   text-align: center;
 }
 
-.tip-form button {
-  width: 12vw;
+.tipform button {
+  width: 14vw;
   padding: 8px;
-  margin: 25px;
+  margin: 24px;
   border-radius: 8px;
   font-size: 16px;
   background-color: #121ab83a;
   color: wheat;
+  display: block;
+}
+
+#total {
+  text-align: center;
 }
