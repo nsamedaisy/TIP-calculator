@@ -18,25 +18,24 @@ body {
 	height: 100vh;
 	margin: 0;
 	overflow: hidden;
-  color: wheat;
+  color: white;
   font-family: 700;
 }
 
 .tipform {
   width: 50vw;
   height: 80vh;
-  background-color: #363a934d;
-  box-shadow: 10px 10px 5px black;
+  background-color: #141a8b8d;
+  box-shadow: 10px 10px 5px #000000;
   border-radius: 9px;
   padding-left: 30px;
   font-size: 22px;
 }
 
 .tipform h3 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
-  padding-top: 15px;
-  color: wheat;
+  color: #b8bbf8fb;
 }
 
 .tipform input {
@@ -45,6 +44,7 @@ body {
   margin-left: 1vw;
   font-size: 18px;
   background-color: #121ab89f;
+  color: white;
   border-radius: 10px;
 }
 
