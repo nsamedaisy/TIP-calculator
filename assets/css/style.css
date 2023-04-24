@@ -5,13 +5,85 @@
 }
 
 body {
+  background-image: url("../images/wallpaper.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
   font-family: Roboto,
     sans-serif;
   display: flex;
-  flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 	margin: 0;
 	overflow: hidden;
+  color: white;
+  font-family: 700;
+}
+
+.tipform {
+  width: 50vw;
+  height: 80vh;
+  background-color: #141a8b8d;
+  box-shadow: 10px 10px 5px #000000;
+  border-radius: 9px;
+  padding-left: 30px;
+  font-size: 22px;
+}
+
+.tipform h3 {
+  font-size: 35px;
+  text-align: center;
+  color: #b8bbf8fb;
+}
+
+.tipform input {
+  width: 25vw;
+  padding: 5px;
+  margin-left: 1vw;
+  font-size: 18px;
+  background-color: #121ab89f;
+  color: white;
+  border-radius: 10px;
+}
+
+option {
+  color: #030427dd;
+}
+
+#tipinput {
+  width: 25vw;
+  padding: 5px;
+  margin-left: 1vw;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #121ab83a;
+  color: wheat;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 35vw;
+  padding: 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+.tipform button {
+  width: 14vw;
+  padding: 8px;
+  margin: 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #121ab83a;
+  color: wheat;
+  display: block;
+}
+
+#total {
+  text-align: center;
 }
